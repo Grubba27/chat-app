@@ -10,7 +10,7 @@ import {io} from "socket.io-client";
 export class SocketIoService {
 
   // TODO change this later
-  url = 'http://localhost:4444';
+  url = 'https://poc-chat-app-grubba.herokuapp.com/';
   socket = io(this.url);
   subjectMessages: Subject<Message> = new Subject<Message>();
 
